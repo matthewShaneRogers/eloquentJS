@@ -9,7 +9,19 @@ Working through [Eloquent JavaScript](https://eloquentjavascript.net/) as a team
 ```bash
 npm install        # first time only
 npm test           # run tests once
-npm run watch      # re-run tests on every save  ← use this during a mob session
+npm run watch      # watch all specs — re-runs on every save  ← use this during a mob session
+```
+
+**Watch a single spec file** (focus the mob on one exercise):
+```bash
+npm run watch:file -- 'npx jasmine spec/triangle.spec.js'
+```
+
+**Install watchexec** (required for watch commands):
+```bash
+sudo apt install watchexec   # Ubuntu/Debian
+brew install watchexec       # macOS
+cargo install watchexec-cli  # via Rust
 ```
 
 ---
@@ -72,8 +84,9 @@ module.exports = { ..., myFunction };
 ## VS Code Live Share Tips
 
 - **Host**: open this folder, start Live Share (`Ctrl+Shift+P` → *Live Share: Start*), share the link.
-- **Guests**: join the link, the integrated terminal is shared — run `npm run watch` in it so everyone sees tests update in real time.
+- **Guests**: join the link, the integrated terminal is shared — run `npm run watch` (or `npm run watch:file`) in it so everyone sees tests update in real time.
 - Optionally enable **shared terminals** in Live Share settings so the driver controls a single watch process.
+- `watchexec --clear` wipes the terminal before each run, keeping the shared screen clean and easy to read.
 
 ---
 

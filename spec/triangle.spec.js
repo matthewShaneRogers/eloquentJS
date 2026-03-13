@@ -10,6 +10,6 @@ const { triangle } = require('../src/triangle');
 
 describe('Given A, when B', () => {
   it('then C', () => {
-    expect(min(2, 4)).toBe(2);
+    expect(1).toBe(3);
   });
 });

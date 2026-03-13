@@ -4,11 +4,10 @@
   "description": "JavaScript TDD mob programming workspace using Jasmine — working through Eloquent JavaScript",
   "scripts": {
     "test": "jasmine",
-    "test:watch": "jasmine --filter=''",
-    "watch": "nodemon --exec 'jasmine' --watch src --watch spec --ext js"
+    "watch": "watchexec --exts js --clear --restart 'npx jasmine'",
+    "watch:file": "watchexec --exts js --clear --restart"
   },
   "devDependencies": {
-    "jasmine": "^5.4.0",
-    "nodemon": "^3.1.0"
+    "jasmine": "^5.4.0"
   }
 }
