@@ -19,9 +19,9 @@ npm run watch:file -- 'npx jasmine spec/triangle.spec.js'
 
 **Install watchexec** (required for watch commands):
 ```bash
-sudo apt install watchexec   # Ubuntu/Debian
-brew install watchexec       # macOS
-cargo install watchexec-cli  # via Rust
+sudo apt install watchexec   # Only run on Ubuntu/Debian
+brew install watchexec       # Only run on macOS
+cargo install watchexec-cli  # Only run on Rust
 ```
 
 ---
